@@ -1,13 +1,14 @@
-﻿namespace ConceptsPOO
+﻿
+namespace ConceptsPOO
 {
     public abstract class Employee
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public int FirstName { get; set; }
+        public string FirstName { get; set; }
 
 
-        public int LastName { get; set; }
+        public string LastName { get; set; }
 
 
         public Date BirtDate { get; set; }
@@ -23,11 +24,10 @@
         public override string ToString()
         {
             //interpolación de strines
-            return $"{id} - {FirstName} {LastName}, " +
+            return $"{Id} - {FirstName} {LastName}, " +
                 $"Birth; {BirtDate}, " +
                 $"Hiring: {HiringDate}, " +
                 $"Is Active: {IsActive}";
         }
-
     }
 }
